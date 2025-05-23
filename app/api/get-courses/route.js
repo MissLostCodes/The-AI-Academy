@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
-import { db } from '@/lib/db';
-import { STUDY_MATERIAL_TABLE } from '@/lib/schema';
+import { db } from '@/configs/db';
+import { STUDY_MATERIAL_TABLE } from '@/configs/schema';
 import { eq, desc } from 'drizzle-orm';
 
 export async function POST(req) {
