@@ -57,7 +57,7 @@ function MaterialCardItem({ item, studyTypeContent, course, refreshData }) {
 
       console.log('Content generation result:', result);
       refreshData(true);
-      toast('Your content is ready to view', {
+      toast('Your content is ready to view please refersh the page ', {
         onAutoClose: () => {
           router.refresh();
         }
